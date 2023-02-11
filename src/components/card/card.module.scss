@@ -1,0 +1,53 @@
+.cardContainer{
+    width: 294px;
+    box-sizing: border-box;
+    border-radius: 5%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; ;
+    margin:0 
+    
+}
+.cardHeader{
+    margin: 0;
+    padding: 10px;
+   font-family: 'Lucida Sans';
+}
+.skillLevel{
+    margin: 0;
+    padding: 10px;
+}
+.aughtorWrapper{
+
+display: flex;
+justify-content: space-between;
+padding: 10px 10px;
+.aughtorName{
+    margin:0;
+}
+
+}
+.starButtonContainer{
+    margin:0;
+    display: flex;
+    .starButton{
+        margin: 0;
+        background-color:white;
+        border: none;
+        cursor: pointer;
+        transition: 0.3s;
+       
+    }
+    .hoverStarIcon{
+      transition: 0.2S;
+        &:hover{
+transform: scale(1.5);
+        }
+    }
+}
+.ratingNumber{
+    margin:0;
+}
+.footerCardWrapper{
+display: flex;
+justify-content: space-between;
+ padding: 10px;
+}
