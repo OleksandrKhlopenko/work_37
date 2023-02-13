@@ -8,7 +8,7 @@ function App() {
         title=" UX Design : How To Implement Usability Testing"
         skillLevel="Beginner"
         aughtor="Alfredo Rhiel Madsen"
-        students="500 Student"
+        students="500"
         modules="5"
         duration="1.30"
       />
