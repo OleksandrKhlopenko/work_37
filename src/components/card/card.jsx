@@ -1,22 +1,18 @@
-
-import styles from "../card/card.module.scss";
+import styles from "../card/Card.module.scss";
 import { useState } from "react";
-const Card = () => {
+const Card = ({ title, skillLevel, aughtor, students, modules, duration }) => {
   const [count, setCount] = useState(4);
   const starRaiting = () => setCount(count + 1);
 
- 
   return (
     <div className={styles.cardContainer}>
       <div className="imageBox">
         <img src="images/photo.png" alt="uxImage" />
       </div>
-      <h3 className={styles.cardHeader}>
-        UX Design : How To Implement Usability Testing
-      </h3>
-      <p className={styles.skillLevel}> level:beginner</p>
+      <h3 className={styles.cardHeader}>{title}</h3>
+      <p className={styles.skillLevel}> Level:{skillLevel}</p>
       <div className={styles.aughtorWrapper}>
-        <p className={styles.aughtorName}>Alfredo Rhiel Madsen</p>
+        <p className={styles.aughtorName}>{aughtor}</p>
         <div className={styles.starButtonContainer}>
           <button onClick={starRaiting} className={styles.starButton}>
             <svg
@@ -33,15 +29,14 @@ const Card = () => {
               />
             </svg>
           </button>
-          <p  className={styles.ratingNumber}>{count}</p>
+          <p className={styles.ratingNumber}>{count}</p>
         </div>
       </div>
-      <div className={styles.footerCardWrapper}>  
-        <span>500 Student</span>
-      <span>5 Modul</span>
-      <span>1h 30m</span>
+      <div className={styles.footerCardWrapper}>
+        <span>{students}students</span>
+        <span>{modules}modules</span>
+        <span>{duration}</span>
       </div>
-    
     </div>
   );
 };
